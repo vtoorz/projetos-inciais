@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <script>
+            var num1 = parseInt (prompt('Digite um numero para ser calculado: '))
+            var num2 = parseInt(prompt('Digite outro numero: '))
+            var sinal = prompt('Digite o sinal de operação')
+            var resultadoFinal = 0
+
+            while( sinal != '+' && sinal != '-' && sinal != '/' && sinal != '*'){
+               var sinal = prompt('Digite o sinal de operação válido')
+            }
+            if(sinal == '+'){
+                resultadoFinal = num1 + num2
+            }
+
+            else if(sinal == '-'){
+                resultadoFinal = num1 - num2
+            }
+
+            else if(sinal == '/'){
+                resultadoFinal = num1 / num2
+            }
+            else if(sinal == '*'){
+                resultadoFinal = num1 * num2
+            }
+
+            alert( 'O resulado final é ' +resultadoFinal)
+        </script>
+
+    </body>
+</html>
